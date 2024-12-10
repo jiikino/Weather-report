@@ -14,8 +14,8 @@
 <body>
     <div class="the-main">
     <header>
-        <form class="search-form">
-            <input type="search" placeholder="Enter a city" required class="Search-form-box">
+        <form class="search-form" id="search-input">
+            <input type="search" placeholder="Enter a city" required class="Search-form-box" id="search-text-input">
             <input type="submit" value="search" class="Search-form-button">
         </form>
     </header>
@@ -28,13 +28,16 @@
 </h1>
 <p xs>
 <p class="current-temp-details">
-   Tuesday 14.49, scattered Clouds <br>
-   Humidty: 66%, wind: 3.13kmlh
+   Tuesday 14.49, scattered Clouds <br/>
+
+   Humidty: <strong>66%</strong>, wind: <strong>3.13kmlh</strong> 
 </p>
 </div>
-<div>
+<div class="current-temp-container">
 <p class="current-temp">
-    ⛅️ 12 °C
+    <span class="current-temp-icon"> ⛅️ </span>
+    <span class="current-temp-figure">12</span> 
+    <span class="current-temp-unit">°C</span>
 </p>
  </div>
  </div>
@@ -43,5 +46,7 @@
 
 <footer>Built by Jess check it  out on <a href="https://github.com/jiikino" target="_blank"> Github</a></footer>
 </div>
+
+<script src="Src/script.js"></script>
 
 </html>

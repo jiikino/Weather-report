@@ -1,12 +1,12 @@
 body {
-    background-color: #f3d9d9;
+    background-color: #f4e1e1;
     font-family: "Roboto", sans-serif;;
 
 }
 
 
 .the-main {
-    background: #f2bbb7;
+    background: #f3c5c2;
     margin: 30px auto; /* keeps it in the middle*/
     max-width: 600px; /* gives the box a certain space outside it */
     padding: 30px; /* adds space inside the box */
@@ -36,14 +36,14 @@ body {
 
 header {
     border-bottom: 1px solid #f9f7fe;
-    padding-bottom: 30px;
+    padding-bottom: 50px;
   }
 
 footer{
     border-top: 1px solid #f9f7fe;
     text-align: center;
     font-size: 15px;
-    padding-top: 20px;
+    padding-top: 40px;
     color: rgba(39, 33, 66, 0.6);
 
   }
@@ -75,3 +75,31 @@ footer{
 .current-temp {
     font-size: 40px;
   }
+
+.current-temp-details strong{
+    color: #f9f7fe;
+
+}  
+
+.current-temp-container{
+    display: flex;
+}
+
+.current-temp-figure{
+    font-size: 88px;
+    font-weight: bold;
+}
+
+.current-temp-icon{
+    top: -20px;
+    font-size: 40px;
+    margin-right: 1px;
+    position: relative;
+}
+
+.current-temp-unit{
+    font-size: 20px;
+    position: relative;
+    top: -50px;
+    position: relative;
+}
