@@ -4,6 +4,16 @@ body {
 
 }
 
+body.dark{
+    background-color: rgb(130, 94, 94);
+}
+
+body.dark .the-main{
+    background-color: rgb(136, 82, 82);
+    color: white;
+    
+}
+
 
 .the-main {
     background: #f3c5c2;
@@ -34,9 +44,15 @@ body {
     
 }
 
+.Search-form-button:hover{
+    background-color: white;
+    transition: all 150ms ease-in-out;
+    color: black;
+}
+
 header {
     border-bottom: 1px solid #f9f7fe;
-    padding-bottom: 50px;
+    padding-bottom: 60px;
   }
 
 footer{
@@ -103,3 +119,27 @@ footer{
     top: -50px;
     position: relative;
 }
+
+#current-humidity{
+    color:  #f9f7fe;
+    font-weight: bold;
+}
+.dark-theme-button{
+    display: flex;
+    justify-content: center;
+}
+
+.dark-theme-button{
+    font-size: 10px;
+    background: #f1928b;
+    padding: 20px 20px;
+    margin: 30px auto;
+    border-radius: 10px;
+}
+
+.dark-theme-button:hover{
+    transition: all 150ms ease-in-out;
+    background: white;
+
+}
+
