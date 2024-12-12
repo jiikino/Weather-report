@@ -14,6 +14,7 @@ function displayTemp (response){
     let city = response.data.city;
     let temperature = Math.round(response.data.temperature.current);
     let humidity = response.data.temperature.humidity;
+    let wind = response.data.wind.speed;
 
     let cityElement = document.querySelector("h1");
     cityElement.innerHTML =`${city}`;
@@ -23,6 +24,9 @@ function displayTemp (response){
 
     let humidityElement = document.querySelector("#current-humidity");
     humidityElement.innerHTML = `${humidity}%`;
+
+    let windElement = document.querySelector("#current-wind");
+    windElement.innerHTML = `${wind}mlh`;
  }
 
  function formatDate(date) {
@@ -65,12 +69,10 @@ form.addEventListener ("submit", search);
 function changeTheme() {
     // Select the <body> element
     let body = document.querySelector("body");
-    let main = document.querySelector("#the-main");
-  
+    
     // Toggle the "dark" class
     body.classList.toggle("dark");
-    main.classList.toggle("dark")
-   
+  
   }
   
   // Attach the event listener to the button

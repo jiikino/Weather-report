@@ -124,6 +124,11 @@ footer{
     color:  #f9f7fe;
     font-weight: bold;
 }
+
+#current-wind{
+    color:  #f9f7fe;
+    font-weight: bold;
+}
 .dark-theme-button{
     display: flex;
     justify-content: center;
