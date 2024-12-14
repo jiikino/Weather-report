@@ -74,8 +74,37 @@ function changeTheme() {
     body.classList.toggle("dark");
   
   }
+
+  function displayForcast() {
+    let forecastElement = document.querySelector("#forecast");
+
+  let days = ["Tue", "Wed","Thu","Fri","Sat"];
+  let forecastHtml = "";
+
+  days.forEach(function (day){
+     forecastHtml += `
+  <div class="weather-forecast-day">
+    <div class="weather-forecast-date">${day}</div>
+    <div class="weather-forecast-icon">🌤️</div>
+    <div class="weather-forecast-temperatures">
+      <div class="weather-forecast-temperature">
+        <strong>15º</strong>
+      </div>
+      <div class="weather-forecast-temperature">9º</div>
+    </div>
+  </div>`;
+  });
+  forecastElement.innerHTML = forecastHtml;
+}
+
+
+ 
+
   
   // Attach the event listener to the button
   let themeButton = document.querySelector("#dark-theme-button");
   themeButton.addEventListener("click", changeTheme);
+
+  displayForcast();
+
   
